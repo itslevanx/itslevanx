@@ -58,16 +58,11 @@
 ---
 ## 📊 GitHub Analytics
 
-<table align="center">
-  <tr>
-    <td>
-      <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=levanxx&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" height="180em"/>
-    </td>
-    <td>
-      <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=levanxx&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" height="180em"/>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=levanxx&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" height="180em"/>
+  <br/>
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=levanxx&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" height="180em"/>
+</p>
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=levanxx&theme=tokyo-night&hide_border=true"/>
