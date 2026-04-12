@@ -4,7 +4,7 @@
 ---
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?lines=Building%20AI%20Systems;Training%20Machine%20Learning%20Models;Data%20Science%20and%20Analytics;Turning%20Data%20into%20Decisions&font=Fira%20Code&center=true&width=800&height=45&color=FF0000&vCenter=true&pause=1000&size=22" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com/?lines=Building%20AI%20Systems;Training%20Machine%20Learning%20Models;Audio%20Signal%20Processing;Turning%20Data%20into%20Decisions&font=Fira%20Code&center=true&width=800&height=45&color=FF0000&vCenter=true&pause=1000&size=22" alt="Typing SVG" />
 </p>
 
 ---
