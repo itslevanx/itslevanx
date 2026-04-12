@@ -53,7 +53,7 @@
   <img src="https://img.shields.io/badge/Xcode-147EFB?style=for-the-badge&logo=xcode&logoColor=white" />
   <img src="https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=black" />
   <img src="https://img.shields.io/badge/Deepnote-3793EF?style=for-the-badge&logo=deepnote&logoColor=white" />
-  <img src="https://avatars.githubusercontent.com/u/139895814?s=200&v=4" width="40" />
+  <img src="https://img.shields.io/badge/Windsurf-0F172A?style=for-the-badge&logo=codeium&logoColor=white" />
 </p>
 
 ---
