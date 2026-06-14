@@ -1,60 +1,81 @@
-<h1 align="center">Hey 👋, I'm Levanx</h1>
-<h3 align="center">🤖 Machine Learning Engineer</h3>
+<h1 align="center"><b>Hi , I'm Leonardo Sullón </b><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>
+<!--  -->
+<img align="right" width=300px alt="Unicorn" src="https://media.tenor.com/rsoULNKnMdYAAAAi/luffy-gear-5-luffy.gif" />
 
----
+<img src="https://media.giphy.com/media/ObNTw8Uzwy6KQ/giphy.gif" width="30px">&nbsp;***About me***
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?lines=Building%20AI%20Systems;Training%20Machine%20Learning%20Models;Audio%20Signal%20Processing;Turning%20Data%20into%20Decisions&font=Fira%20Code&center=true&width=800&height=45&color=FF0000&vCenter=true&pause=1000&size=22" alt="Typing SVG" />
-</p>
+I am a Software Engineering student passionate about Data Science, Artificial Intelligence, and software development. I enjoy building innovative solutions that combine technology, creativity, and real-world impact. Currently, I am expanding my knowledge in Artificial Intelligence, Machine Learning, Python, and Swift development, while continuously exploring new tools and technologies that help me grow as a developer.
 
----
+🌱 I’m currently learning:
 
-## 🛠 Tech Stack & Tools
+* Artificial Intelligence & Machine Learning
+* Python for Data Science
+* Swift Development
+* Data Analytics
 
-### 🔹 Programming Languages
-<p align="left">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white" />
-</p>
+💡 I enjoy turning ideas into projects, solving problems, and constantly challenging myself to learn something new. I believe that learning never stops, and I am always looking for opportunities to improve my skills and broaden my knowledge.
 
-### 🔹 Data Science & Machine Learning
-<p align="left">
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
-  <img src="https://img.shields.io/badge/Librosa-CC0000?style=for-the-badge&logo=python&logoColor=white" />
-</p>
+Outside of tech, 🎮 I enjoy playing video games, 🎵 listening to music, especially electronic music, and 📺 watching anime, with One Piece being one of my favorites.
 
-### 🔹 Deep Learning & AI
-<p align="left">
-  <img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white" />
-</p>
+🚀 Always learning, always building, and always looking for the next challenge.
 
-### 🔹 Data Visualization
-<p align="left">
-  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=plotly&logoColor=white" />
-  <img src="https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge&logo=python&logoColor=white" />
-</p>
 
-### 🔹 Databases & Cloud
-<p align="left">
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
-</p>
+## My Skills Include
 
-### 🔹 Development Tools
-<p align="left">
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
-  <img src="https://img.shields.io/badge/Xcode-147EFB?style=for-the-badge&logo=xcode&logoColor=white" />
-  <img src="https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=black" />
-  <img src="https://img.shields.io/badge/Deepnote-3793EF?style=for-the-badge&logo=deepnote&logoColor=white" />
-  <img src="https://img.shields.io/badge/Windsurf-0F172A?style=for-the-badge&logo=codeium&logoColor=white" />
-</p>
+<h4> Languages </h4>
+<span> 
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white">
+  <img src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white">
+  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54">
+  <img src= "https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white">
+</span>
+
+<h4> ML/DL </h4>
+<span>
+  <img src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black">
+  <img src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white">
+  <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white">
+  <img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white">
+  <img src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white">
+</span>
+
+
+<h4> Databases </h4>
+<span>
+  <img src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white">
+  <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white">
+  <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white">
+  <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white">
+  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white">
+</span>
+
+
+<h4> Hosting/SaaS </h4>
+<span>
+  <img src="https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white">
+  <img src="https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white">
+</span>
+
+
+<h4> IDEs/Editors </h4>
+<span>
+  <img src="https://img.shields.io/badge/Devin-000000?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&logo=googlecolab&logoColor=white">
+  <img src="https://img.shields.io/badge/Notepad++-90E59A.svg?style=for-the-badge&logo=notepad%2b%2b&logoColor=black">
+  <img src="https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white">
+  <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white">
+  <img src="https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white">
+</span>
+
+
+<h4> Other Tools and Technologies </h4>
+<span>
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
+  <img src="https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white">
+  <img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white">
+</span>
 
 ---
 ## 📊 GitHub Analytics
@@ -67,6 +88,5 @@
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=levanxx&theme=tokyo-night&hide_border=true"/>
 </p>
----
 
 <p align="center">✨ Thanks for visiting my profile ✨</p>
