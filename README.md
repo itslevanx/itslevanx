@@ -82,12 +82,14 @@ Outside of tech, 🎮 I enjoy playing video games, 🎵 listening to music, espe
 
 <p align="center">
   <img
-    src="https://github-readme-stats-dun-rho-65.vercel.app/api?username=itslevanx&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true"
-    width="48%"
+    src="https://github-readme-stats-dun-rho-65.vercel.app/api?username=itslevanx&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&card_width=500"
+    width="49%"
+    height="220"
   />
   <img
-    src="https://github-readme-stats-dun-rho-65.vercel.app/api/top-langs/?username=itslevanx&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"
-    width="48%"
+    src="https://github-readme-stats-dun-rho-65.vercel.app/api/top-langs/?username=itslevanx&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&card_width=500"
+    width="49%"
+    height="220"
   />
 </p>
 
