@@ -2,17 +2,7 @@
 
 <img src="./assets/levanx-nanotech.svg" width="100%" alt="Leonardo Sullón — AI, Machine Learning and Software Engineering" />
 
-<br />
-
-`SYSTEM ONLINE` &nbsp;•&nbsp; `LEARNING MODE` &nbsp;•&nbsp; `BUILDING THE FUTURE`
-
-<br /><br />
-
-![Profile views](https://komarev.com/ghpvc/?username=itslevanx&style=flat-square&color=00b8d4&label=PROFILE+SIGNALS)
-
 </div>
-
-<img src="./assets/divider.svg" width="100%" alt="Section divider" />
 
 ## About me
 
@@ -41,21 +31,13 @@ Outside of tech, 🎮 I enjoy playing video games, 🎵 listening to music—esp
 
 <img src="./assets/neural-network.svg" width="100%" alt="Animated neural pipeline from data to insight" />
 
-<img src="./assets/divider.svg" width="100%" alt="Section divider" />
-
 ## Identity synthesis
 
 <div align="center">
 
 <img src="./assets/leonardo-nanotech-transformation.gif" width="100%" alt="Animated transformation of Leonardo from a nanotechnology point-cloud portrait into a neural AI core" />
 
-<br />
-
-<img src="./assets/identity-protocol.svg" width="100%" alt="Animated identity synthesis protocol" />
-
 </div>
-
-<img src="./assets/divider.svg" width="100%" alt="Section divider" />
 
 ## Skills
 
@@ -112,16 +94,6 @@ Outside of tech, 🎮 I enjoy playing video games, 🎵 listening to music—esp
 
 <img src="./assets/ml-terminal.svg" width="100%" alt="Animated machine learning terminal" />
 
-<img src="./assets/divider.svg" width="100%" alt="Section divider" />
-
-## Data in motion
-
-<img src="./assets/data-stream.svg" width="100%" alt="Animated data stream transforming raw signals into insights" />
-
-My work sits at the intersection of **software engineering**, **data**, and **intelligent systems**: exploring information, finding patterns, and turning them into useful experiences.
-
-<img src="./assets/divider.svg" width="100%" alt="Section divider" />
-
 ## GitHub analytics
 
 <div align="center">
@@ -143,12 +115,8 @@ My work sits at the intersection of **software engineering**, **data**, and **in
   <img width="100%" alt="Animated contribution snake" src="./assets/generated/github-contribution-grid-snake.svg" />
 </picture>
 
-<img src="./assets/divider.svg" width="100%" alt="Section divider" />
-
 <div align="center">
 
 <img src="./assets/footer.svg" width="100%" alt="Thanks for visiting — always learning and building" />
-
-✨ **Thanks for visiting my profile** ✨
 
 </div>
