@@ -43,7 +43,21 @@ Outside of tech, 🎮 I enjoy playing video games, 🎵 listening to music—esp
 
 <img src="./assets/divider.svg" width="100%" alt="Section divider" />
 
-## `02 // TECHNOLOGY_MATRIX`
+## `02 // IDENTITY_SYNTHESIS`
+
+<div align="center">
+
+<img src="./assets/leonardo-nanotech-transformation.png" width="100%" alt="Leonardo transforms from a nanotechnology point-cloud portrait into a neural AI core" />
+
+<br />
+
+<img src="./assets/identity-protocol.svg" width="100%" alt="Animated identity synthesis protocol" />
+
+</div>
+
+<img src="./assets/divider.svg" width="100%" alt="Section divider" />
+
+## `03 // TECHNOLOGY_MATRIX`
 
 <div align="center">
 
@@ -100,7 +114,7 @@ Outside of tech, 🎮 I enjoy playing video games, 🎵 listening to music—esp
 
 <img src="./assets/divider.svg" width="100%" alt="Section divider" />
 
-## `03 // DATA_IN_MOTION`
+## `04 // DATA_IN_MOTION`
 
 <img src="./assets/data-stream.svg" width="100%" alt="Animated data stream transforming raw signals into insights" />
 
@@ -108,7 +122,7 @@ My work sits at the intersection of **software engineering**, **data**, and **in
 
 <img src="./assets/divider.svg" width="100%" alt="Section divider" />
 
-## `04 // GITHUB_TELEMETRY`
+## `05 // GITHUB_TELEMETRY`
 
 <div align="center">
 
@@ -124,9 +138,9 @@ My work sits at the intersection of **software engineering**, **data**, and **in
 ### `CONTRIBUTION_PROTOCOL`
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/itslevanx/itslevanx/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/itslevanx/itslevanx/output/github-contribution-grid-snake.svg" />
-  <img width="100%" alt="Animated contribution snake" src="https://raw.githubusercontent.com/itslevanx/itslevanx/output/github-contribution-grid-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/github-contribution-grid-snake.svg" />
+  <img width="100%" alt="Animated contribution snake" src="./assets/generated/github-contribution-grid-snake.svg" />
 </picture>
 
 <img src="./assets/divider.svg" width="100%" alt="Section divider" />

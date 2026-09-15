@@ -1,6 +1,11 @@
 name: Generate contribution snake
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/snake.yml"
   schedule:
     - cron: "17 3 * * *"
   workflow_dispatch:
@@ -18,18 +23,21 @@ jobs:
     timeout-minutes: 10
 
     steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
       - name: Generate light and dark contribution snakes
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            assets/generated/github-contribution-grid-snake.svg
+            assets/generated/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Publish generated assets to output branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          build_dir: dist
-          branch: output
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit refreshed contribution assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/generated/github-contribution-grid-snake*.svg
+          git diff --cached --quiet || git commit -m "chore: refresh contribution snake"
+          git push
