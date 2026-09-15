@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="320" viewBox="0 0 1000 320" role="img" aria-labelledby="title desc">
+  <title id="title">Leonardo Sullón — AI and software engineering</title>
+  <desc id="desc">Animated futuristic interface with a nanotechnology core, circuit traces and Leonardo's technical focus.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070b1c"/><stop offset=".52" stop-color="#10183a"/><stop offset="1" stop-color="#07172a"/></linearGradient>
+    <linearGradient id="edge" x1="0" x2="1"><stop stop-color="#00e5ff" stop-opacity="0"/><stop offset=".5" stop-color="#00e5ff"/><stop offset="1" stop-color="#a855f7" stop-opacity="0"/></linearGradient>
+    <radialGradient id="core"><stop stop-color="#e0fbff"/><stop offset=".22" stop-color="#00e5ff"/><stop offset=".7" stop-color="#7c3aed"/><stop offset="1" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#68e8ff" stroke-opacity=".06"/></pattern>
+    <clipPath id="panel"><rect x="8" y="8" width="984" height="304" rx="24"/></clipPath>
+    <style>
+      .trace{stroke-dasharray:8 14;animation:flow 5s linear infinite}.orbit{transform-origin:790px 160px;animation:spin 12s linear infinite}.orbit.rev{animation-direction:reverse;animation-duration:8s}.blink{animation:blink 2.4s ease-in-out infinite}.scan{animation:scan 5s ease-in-out infinite}.float{animation:float 4s ease-in-out infinite}.letter{font:700 54px ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:3px}.mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}.label{font:600 13px ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:2px}@keyframes flow{to{stroke-dashoffset:-220}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes blink{50%{opacity:.25}}@keyframes scan{0%,100%{transform:translateY(-50px);opacity:0}20%,80%{opacity:.7}50%{transform:translateY(350px)}}@keyframes float{50%{transform:translateY(-6px)}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+    </style>
+  </defs>
+  <g clip-path="url(#panel)">
+    <rect x="8" y="8" width="984" height="304" rx="24" fill="url(#bg)"/>
+    <rect x="8" y="8" width="984" height="304" rx="24" fill="url(#grid)"/>
+    <path d="M0 72H118l26 26h96M0 262h164l32-32h72M1000 55H918l-34 34h-70M1000 274H890l-32-32h-64" fill="none" stroke="#00e5ff" stroke-opacity=".35" class="trace"/>
+    <rect class="scan" x="8" y="0" width="984" height="2" fill="url(#edge)" filter="url(#glow)"/>
+  </g>
+  <rect x="8.5" y="8.5" width="983" height="303" rx="23.5" fill="none" stroke="url(#edge)" stroke-opacity=".65"/>
+  <g class="mono" fill="#9fb4d9">
+    <text x="42" y="48" font-size="11" letter-spacing="2">LEONARDO.SULLON // PROFILE.OS</text>
+    <circle cx="913" cy="44" r="4" fill="#3cffb5" class="blink"/><text x="925" y="48" font-size="10" fill="#76fbd0">ONLINE</text>
+  </g>
+  <g class="float">
+    <text x="68" y="137" fill="#f4f8ff" class="letter">LEONARDO</text>
+    <text x="68" y="195" fill="#f4f8ff" class="letter">SULLÓN</text>
+    <rect x="68" y="215" width="495" height="2" fill="url(#edge)"/>
+    <text x="70" y="247" fill="#68e8ff" class="label">AI · MACHINE LEARNING · SOFTWARE ENGINEERING</text>
+    <text x="70" y="273" fill="#8fa6cf" class="mono" font-size="13">Building intelligent systems with real-world impact.</text>
+  </g>
+  <g filter="url(#glow)">
+    <g class="orbit"><ellipse cx="790" cy="160" rx="125" ry="47" fill="none" stroke="#00e5ff" stroke-opacity=".55"/><circle cx="915" cy="160" r="5" fill="#8af7ff"/></g>
+    <g class="orbit rev"><ellipse cx="790" cy="160" rx="118" ry="48" transform="rotate(60 790 160)" fill="none" stroke="#a855f7" stroke-opacity=".55"/><circle cx="908" cy="160" r="5" fill="#c084fc"/></g>
+    <g class="orbit" style="animation-duration:10s"><ellipse cx="790" cy="160" rx="118" ry="48" transform="rotate(120 790 160)" fill="none" stroke="#3cffb5" stroke-opacity=".45"/><circle cx="908" cy="160" r="4" fill="#6effd1"/></g>
+    <circle cx="790" cy="160" r="43" fill="url(#core)" opacity=".92" class="blink"/>
+    <circle cx="790" cy="160" r="12" fill="#fff"/>
+  </g>
+  <text x="790" y="294" text-anchor="middle" fill="#6f86ae" class="label">NANO / NEURAL CORE 01</text>
+</svg>

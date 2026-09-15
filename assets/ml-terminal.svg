@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="270" viewBox="0 0 1000 270" role="img" aria-labelledby="title desc">
+  <title id="title">Machine learning terminal</title><desc id="desc">Animated terminal showing a machine learning experiment reaching high accuracy.</desc>
+  <defs>
+    <linearGradient id="tbg" x2="1" y2="1"><stop stop-color="#070b18"/><stop offset="1" stop-color="#0c1730"/></linearGradient>
+    <linearGradient id="bar"><stop stop-color="#00e5ff"/><stop offset="1" stop-color="#3cffb5"/></linearGradient>
+    <filter id="tglow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>.mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}.line{opacity:0;animation:show 8s infinite}.cursor{animation:blink 1s step-end infinite}.progress{animation:grow 8s ease-in-out infinite;transform-origin:left}.plot{stroke-dasharray:400;stroke-dashoffset:400;animation:draw 8s ease-in-out infinite}@keyframes show{0%,8%{opacity:0}12%,92%{opacity:1}100%{opacity:0}}@keyframes blink{50%{opacity:0}}@keyframes grow{0%,35%{transform:scaleX(.04)}70%,100%{transform:scaleX(1)}}@keyframes draw{0%,25%{stroke-dashoffset:400}70%,100%{stroke-dashoffset:0}}@media(prefers-reduced-motion:reduce){*{animation:none!important}.line{opacity:1}.progress{transform:none}.plot{stroke-dashoffset:0}}</style>
+  </defs>
+  <rect x="1" y="1" width="998" height="268" rx="18" fill="url(#tbg)" stroke="#28375b"/>
+  <path d="M1 48h998" stroke="#28375b"/><circle cx="25" cy="25" r="5" fill="#ff5f57"/><circle cx="43" cy="25" r="5" fill="#febc2e"/><circle cx="61" cy="25" r="5" fill="#28c840"/>
+  <text x="500" y="30" text-anchor="middle" fill="#7d91b5" class="mono" font-size="11">levanx@neural-lab — experiment.py</text>
+  <g class="mono" font-size="13">
+    <text x="28" y="80" fill="#3cffb5">❯</text><text x="50" y="80" fill="#dce8ff">python train_model.py --mode explore</text>
+    <text x="28" y="108" fill="#7f94bb" class="line" style="animation-delay:-.5s">[01] Loading dataset + engineering features...</text>
+    <text x="28" y="136" fill="#7f94bb" class="line" style="animation-delay:-1s">[02] Training model / validating assumptions...</text>
+    <text x="28" y="164" fill="#00e5ff" class="line" style="animation-delay:-1.5s">[03] Accuracy  98.7%  —  loss 0.013</text>
+    <rect x="28" y="184" width="520" height="8" rx="4" fill="#182542"/><rect x="28" y="184" width="520" height="8" rx="4" fill="url(#bar)" class="progress" filter="url(#tglow)"/>
+    <text x="28" y="224" fill="#3cffb5" class="line" style="animation-delay:-2s">✓ Insight generated. Ship, measure, iterate.</text>
+    <rect x="402" y="212" width="8" height="16" fill="#3cffb5" class="cursor"/>
+  </g>
+  <g transform="translate(620 72)" fill="none">
+    <path d="M0 145H330M0 0v145" stroke="#26375e"/>
+    <path d="M0 130C38 125 55 109 84 111s44-42 75-38 39-37 69-32 52-26 102-32" stroke="#00e5ff" stroke-width="3" class="plot" filter="url(#tglow)"/>
+    <path d="M0 140C35 132 63 137 91 121s44 5 73-16 46 2 78-23 44 4 88-30" stroke="#a855f7" stroke-width="2" class="plot" style="animation-delay:-1s"/>
+    <text x="260" y="165" fill="#647da8" class="mono" font-size="10">EPOCHS →</text>
+  </g>
+</svg>
