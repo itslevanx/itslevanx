@@ -14,7 +14,7 @@
 
 <img src="./assets/divider.svg" width="100%" alt="Section divider" />
 
-## `01 // ABOUT_ME`
+## About me
 
 <img src="https://media.giphy.com/media/ObNTw8Uzwy6KQ/giphy.gif" width="24" alt="Animated terminal indicator" /> &nbsp; **Human signal detected**
 
@@ -24,7 +24,7 @@
 
 I am a **Software Engineering student** passionate about **Data Science, Artificial Intelligence, and software development**. I enjoy building innovative solutions that combine technology, creativity, and real-world impact. Currently, I am expanding my knowledge in Artificial Intelligence, Machine Learning, Python, and Swift development, while continuously exploring new tools and technologies that help me grow as a developer.
 
-#### `CURRENT LEARNING VECTOR`
+#### Currently learning
 
 - Artificial Intelligence & Machine Learning
 - Python for Data Science
@@ -43,11 +43,11 @@ Outside of tech, 🎮 I enjoy playing video games, 🎵 listening to music—esp
 
 <img src="./assets/divider.svg" width="100%" alt="Section divider" />
 
-## `02 // IDENTITY_SYNTHESIS`
+## Identity synthesis
 
 <div align="center">
 
-<img src="./assets/leonardo-nanotech-transformation.png" width="100%" alt="Leonardo transforms from a nanotechnology point-cloud portrait into a neural AI core" />
+<img src="./assets/leonardo-nanotech-transformation.gif" width="100%" alt="Animated transformation of Leonardo from a nanotechnology point-cloud portrait into a neural AI core" />
 
 <br />
 
@@ -57,7 +57,7 @@ Outside of tech, 🎮 I enjoy playing video games, 🎵 listening to music—esp
 
 <img src="./assets/divider.svg" width="100%" alt="Section divider" />
 
-## `03 // TECHNOLOGY_MATRIX`
+## Skills
 
 <div align="center">
 
@@ -114,7 +114,7 @@ Outside of tech, 🎮 I enjoy playing video games, 🎵 listening to music—esp
 
 <img src="./assets/divider.svg" width="100%" alt="Section divider" />
 
-## `04 // DATA_IN_MOTION`
+## Data in motion
 
 <img src="./assets/data-stream.svg" width="100%" alt="Animated data stream transforming raw signals into insights" />
 
@@ -122,7 +122,7 @@ My work sits at the intersection of **software engineering**, **data**, and **in
 
 <img src="./assets/divider.svg" width="100%" alt="Section divider" />
 
-## `05 // GITHUB_TELEMETRY`
+## GitHub analytics
 
 <div align="center">
 
@@ -135,7 +135,7 @@ My work sits at the intersection of **software engineering**, **data**, and **in
 
 </div>
 
-### `CONTRIBUTION_PROTOCOL`
+### Contribution snake
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/github-contribution-grid-snake-dark.svg" />
