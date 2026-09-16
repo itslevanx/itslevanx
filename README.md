@@ -31,14 +31,6 @@ Outside of tech, 🎮 I enjoy playing video games, 🎵 listening to music—esp
 
 <img src="./assets/neural-network.svg" width="100%" alt="Animated neural pipeline from data to insight" />
 
-## Identity synthesis
-
-<div align="center">
-
-<img src="./assets/leonardo-nanotech-transformation.gif" width="100%" alt="Animated transformation of Leonardo from a nanotechnology point-cloud portrait into a neural AI core" />
-
-</div>
-
 ## Skills
 
 <div align="center">
