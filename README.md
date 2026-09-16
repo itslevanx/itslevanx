@@ -7,10 +7,9 @@
 ## About me
 
 <img src="https://media.giphy.com/media/ObNTw8Uzwy6KQ/giphy.gif" width="24" alt="Animated terminal indicator" /> &nbsp; 
+### Hi, I'm Leonardo Sullón <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28" alt="Waving hand" />
 
 <img align="right" width="185" alt="Luffy Gear 5" src="https://media.tenor.com/rsoULNKnMdYAAAAi/luffy-gear-5-luffy.gif" />
-
-### Hi, I'm Leonardo Sullón <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28" alt="Waving hand" />
 
 I am a **Software Engineering student** passionate about **Data Science, Artificial Intelligence, and software development**. I enjoy building innovative solutions that combine technology, creativity, and real-world impact. Currently, I am expanding my knowledge in Artificial Intelligence, Machine Learning, Python, and Swift development, while continuously exploring new tools and technologies that help me grow as a developer.
 
