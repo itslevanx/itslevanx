@@ -6,7 +6,7 @@
 
 ## About me
 
-<img src="https://media.giphy.com/media/ObNTw8Uzwy6KQ/giphy.gif" width="24" alt="Animated terminal indicator" /> &nbsp; **Human signal detected**
+<img src="https://media.giphy.com/media/ObNTw8Uzwy6KQ/giphy.gif" width="24" alt="Animated terminal indicator" /> &nbsp; 
 
 <img align="right" width="185" alt="Luffy Gear 5" src="https://media.tenor.com/rsoULNKnMdYAAAAi/luffy-gear-5-luffy.gif" />
 
