@@ -94,8 +94,6 @@ Outside of tech, 🎮 I enjoy playing video games, 🎵 listening to music—esp
 
 </div>
 
-### Contribution snake
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="./assets/generated/github-contribution-grid-snake.svg" />
