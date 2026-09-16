@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="250" viewBox="0 0 1000 250" role="img" aria-labelledby="title desc">
+  <title id="title">Animated neural network</title><desc id="desc">Signals travel through a layered neural network from data input to intelligent output.</desc>
+  <defs>
+    <linearGradient id="nbg" x2="1" y2="1"><stop stop-color="#080d20"/><stop offset="1" stop-color="#111b3d"/></linearGradient>
+    <linearGradient id="signal"><stop stop-color="#00e5ff"/><stop offset=".5" stop-color="#a855f7"/><stop offset="1" stop-color="#3cffb5"/></linearGradient>
+    <filter id="nglow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3" result="g"/><feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>.wire{stroke:#6381b7;stroke-opacity:.22}.pulse{stroke:url(#signal);stroke-width:2;stroke-dasharray:2 280;stroke-linecap:round;animation:signal 3.4s linear infinite}.n{fill:#0c1734;stroke:#00d9ff;stroke-width:1.5}.n2{stroke:#a855f7}.n3{stroke:#3cffb5}.halo{animation:halo 2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}@keyframes signal{to{stroke-dashoffset:-282}}@keyframes halo{50%{opacity:.35;transform:scale(.76)}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+  </defs>
+  <rect x="1" y="1" width="998" height="248" rx="20" fill="url(#nbg)" stroke="#27385f"/>
+  <text x="32" y="36" fill="#9fb4d9" font-family="ui-monospace,monospace" font-size="12" letter-spacing="2">NEURAL PIPELINE / LIVE INFERENCE</text>
+  <g fill="none">
+    <g class="wire">
+      <path d="M110 75L330 60M110 75l220 65M110 125L330 60M110 125l220 80M110 175L330 140M110 175l220 30M330 60l220 30M330 60l220 70M330 140l220-50M330 140l220 70M330 205L550 90m-220 115l220 5M550 90l220 35M550 130l220-5M550 210l220-85M770 125l135 0"/>
+    </g>
+    <g class="pulse">
+      <path d="M110 75L330 60l220 70 220-5h135"/><path d="M110 125l220 80L550 90l220 35h135" style="animation-delay:-1.1s"/><path d="M110 175l220-35 220 70 220-85h135" style="animation-delay:-2.2s"/>
+    </g>
+  </g>
+  <g filter="url(#nglow)">
+    <g class="n"><circle cx="110" cy="75" r="10"/><circle cx="110" cy="125" r="10"/><circle cx="110" cy="175" r="10"/></g>
+    <g class="n n2"><circle cx="330" cy="60" r="12"/><circle cx="330" cy="140" r="12"/><circle cx="330" cy="205" r="12"/></g>
+    <g class="n n2"><circle cx="550" cy="90" r="12"/><circle cx="550" cy="130" r="12"/><circle cx="550" cy="210" r="12"/></g>
+    <g class="n n3"><circle cx="770" cy="125" r="16" class="halo"/><circle cx="770" cy="125" r="8" fill="#3cffb5"/></g>
+    <circle cx="905" cy="125" r="23" fill="#102641" stroke="#3cffb5"/><path d="M895 125l7 7 14-17" stroke="#c5ffe9" stroke-width="3"/>
+  </g>
+  <g fill="#7189b3" font-family="ui-monospace,monospace" font-size="10" letter-spacing="1"><text x="82" y="222">DATA</text><text x="295" y="230">FEATURES</text><text x="520" y="230">LAYERS</text><text x="742" y="165">MODEL</text><text x="875" y="165">INSIGHT</text></g>
+</svg>

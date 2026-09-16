@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="180" viewBox="0 0 1000 180" role="img" aria-labelledby="title desc">
+  <title id="title">Thanks for visiting</title><desc id="desc">A glowing futuristic horizon with an orbiting signal and a thank you message.</desc>
+  <defs>
+    <linearGradient id="fbg" x2="1" y2="1"><stop stop-color="#080d20"/><stop offset=".55" stop-color="#11183a"/><stop offset="1" stop-color="#071827"/></linearGradient><linearGradient id="h" x2="1"><stop stop-color="#00e5ff" stop-opacity="0"/><stop offset=".5" stop-color="#00e5ff"/><stop offset="1" stop-color="#a855f7" stop-opacity="0"/></linearGradient><filter id="fg"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>.beam{animation:beam 3s ease-in-out infinite;transform-origin:center}@keyframes beam{50%{opacity:.35;transform:scaleX(.7)}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+  </defs>
+  <rect x="1" y="1" width="998" height="178" rx="20" fill="url(#fbg)" stroke="#27385f"/>
+  <path d="M30 112h940" stroke="url(#h)" stroke-width="2" filter="url(#fg)" class="beam"/>
+  <path d="M90 104C280 24 720 24 910 104C720 160 280 160 90 104" fill="none" stroke="#425a87" stroke-opacity=".25"/>
+  <circle r="7" fill="#c5fbff" filter="url(#fg)"><animateMotion dur="8s" repeatCount="indefinite" path="M 90 104 C 280 24 720 24 910 104 C 720 160 280 160 90 104 Z"/></circle>
+  <text x="500" y="76" text-anchor="middle" fill="#eff7ff" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="21" font-weight="700" letter-spacing="3">THANKS FOR VISITING</text>
+  <text x="500" y="104" text-anchor="middle" fill="#7f96bc" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" letter-spacing="2">ALWAYS LEARNING · ALWAYS BUILDING · ALWAYS EXPLORING</text>
+  <text x="500" y="146" text-anchor="middle" fill="#3cffb5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10">● CONNECTION OPEN</text>
+</svg>
