@@ -92,8 +92,6 @@ Outside of tech, 🎮 I enjoy playing video games, 🎵 listening to music—esp
 
 <br />
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=itslevanx&theme=tokyo-night&hide_border=true" width="100%" alt="Leonardo's GitHub activity graph" />
-
 </div>
 
 ### Contribution snake
