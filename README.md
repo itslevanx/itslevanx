@@ -77,6 +77,12 @@ Outside of tech, 🎮 I enjoy playing video games, 🎵 listening to music—esp
 <img src="https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white" alt="Jira" />
 <img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n" />
 
+## Certifications
+
+<img src="./assets/badge-ghf--AVHlfQC.png" alt="GitHub Foundations" width="120">
+
+**GitHub Foundations**
+
 </div>
 
 <br />
