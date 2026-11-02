@@ -36,50 +36,49 @@ Outside of tech, 🎮 I enjoy playing video games, 🎵 listening to music—esp
 
 <div align="center">
 
-### Languages
+<h4>Languages</h4>
 
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-<img src="https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white" alt="LaTeX" />
-<img src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white" alt="Markdown" />
-<img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
-<img src="https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white" alt="Swift" />
+<p>
+<img src="./assets/skills/languages-1.23492c108a.svg" width="336" alt="Python, Swift, HTML5" />
+<img src="./assets/skills/languages-2.4e94086bc3.svg" width="336" alt="CSS3, LaTeX, Markdown" />
+</p>
 
-### Machine Learning / Data Science
+<h4>Machine Learning / Data Science</h4>
 
-<img src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black" alt="Matplotlib" />
-<img src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
-<img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
-<img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white" alt="PyTorch" />
-<img src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn" />
+<p>
+<img src="./assets/skills/machine-learning-1.a05e72e985.svg" width="336" alt="PyTorch, scikit-learn, NumPy" />
+<img src="./assets/skills/machine-learning-2.4c7212257b.svg" width="224" alt="pandas, Matplotlib" />
+</p>
 
-### Databases
+<h4>Databases</h4>
 
-<img src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white" alt="Microsoft SQL Server" />
-<img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-<img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-<img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
-<img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
+<p>
+<img src="./assets/skills/databases-1.1283e2dee4.svg" width="336" alt="SQL Server, MySQL, PostgreSQL" />
+<img src="./assets/skills/databases-2.867798523f.svg" width="224" alt="SQLite, Supabase" />
+</p>
 
-### Hosting / SaaS
+<h4>Hosting / SaaS</h4>
 
-<img src="https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Pages" />
-<img src="https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white" alt="Render" />
+<p>
+<img src="./assets/skills/hosting-1.cbaf5d2cda.svg" width="224" alt="GitHub Pages, Render" />
+</p>
 
-### IDEs / Editors
+<h4>IDEs / Editors</h4>
 
-<img src="https://img.shields.io/badge/Devin-000000?style=for-the-badge" alt="Devin" />
-<img src="https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Google Colab" />
-<img src="https://img.shields.io/badge/Notepad++-90E59A.svg?style=for-the-badge&logo=notepad%2b%2b&logoColor=black" alt="Notepad++" />
-<img src="https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white" alt="Visual Studio" />
-<img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Visual Studio Code" />
-<img src="https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white" alt="Xcode" />
+<p>
+<img src="./assets/skills/editors-1.19f6060623.svg" width="336" alt="Devin, Google Colab, Notepad++" />
+<img src="./assets/skills/editors-2.2f98e19116.svg" width="336" alt="Visual Studio, VS Code, Xcode" />
+</p>
 
-### Other Tools & Technologies
+<h4>Other Tools &amp; Technologies</h4>
 
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-<img src="https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white" alt="Jira" />
-<img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n" />
+<p>
+<img src="./assets/skills/tools-1.573d6805ab.svg" width="224" alt="Git, n8n" />
+</p>
+
+</div>
+
+<div align="center">
 
 ## Certifications
 
@@ -112,6 +111,12 @@ Outside of tech, 🎮 I enjoy playing video games, 🎵 listening to music—esp
 
 <div align="center">
 
-<img src="./assets/footer.svg" width="100%" alt="Thanks for visiting — always learning and building" />
+<picture>
+  <source media="(max-width: 540px) and (prefers-color-scheme: dark)" srcset="./assets/footer-dark-compact.58bd63c2b7.svg" />
+  <source media="(max-width: 540px) and (prefers-color-scheme: light)" srcset="./assets/footer-light-compact.f4b5eff0de.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/footer-dark.01ce3de7ca.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/footer-light.b17115f965.svg" />
+  <img src="./assets/footer-dark.01ce3de7ca.svg" width="100%" alt="Thanks for stopping by — Leonardo Sullón. Always learning, always building, always exploring." />
+</picture>
 
 </div>

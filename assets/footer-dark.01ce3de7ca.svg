@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="170" viewBox="0 0 880 170" role="img" aria-labelledby="title desc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif">
+<title id="title">Thanks for stopping by.</title>
+<desc id="desc">Leonardo Sullón. Always learning, always building, always exploring.</desc>
+<path d="M100 18H419M461 18H780" stroke="#28374E"/>
+<path d="M440 13l5 5-5 5-5-5z" fill="none" stroke="#59DBED" stroke-width="1.3"/>
+<text x="440" y="76" text-anchor="middle" fill="#E5EDF8" font-size="27" font-weight="600" letter-spacing="-.6">Thanks for stopping by.</text>
+<text x="440" y="106" text-anchor="middle" fill="#8C9CB3" font-size="13">Always learning · Always building · Always exploring</text>
+<text x="440" y="145" text-anchor="middle" fill="#8C9CB3" font-size="10" font-weight="500" letter-spacing="2.5">LEONARDO SULLÓN</text>
+</svg>
