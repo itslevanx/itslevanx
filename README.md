@@ -8,25 +8,19 @@
 
 </div>
 
-## About me 
-### Hi, I'm Leonardo Sullón <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28" alt="Waving hand" />
+## About me
 
-<img align="right" width="185" alt="Luffy Gear 5" src="https://media.tenor.com/rsoULNKnMdYAAAAi/luffy-gear-5-luffy.gif" />
+<img align="right" width="105" alt="Luffy Gear 5" src="https://media.tenor.com/rsoULNKnMdYAAAAi/luffy-gear-5-luffy.gif" />
 
-I am a **Software Engineering student** passionate about **Data Science, Artificial Intelligence, and software development**. I enjoy building innovative solutions that combine technology, creativity, and real-world impact. Currently, I am expanding my knowledge in Artificial Intelligence, Machine Learning, Python, and Swift development, while continuously exploring new tools and technologies that help me grow as a developer.
+Software Engineering student based in Lima, Peru, working toward a career in **Machine Learning Engineering**. Interested in understanding data, building models, and turning ideas into useful software.
 
-#### Currently learning
+**Currently learning**
 
-- Artificial Intelligence & Machine Learning
-- Python for Data Science
-- Swift Development
-- Data Analytics
+- Machine Learning and data analysis with Python.
+- Model development with scikit-learn and PyTorch.
+- Software development with Swift.
 
-💡 I enjoy turning ideas into projects, solving problems, and constantly challenging myself to learn something new. I believe that learning never stops, and I am always looking for opportunities to improve my skills and broaden my knowledge.
-
-Outside of tech, 🎮 I enjoy playing video games, 🎵 listening to music—especially electronic music—and 📺 watching anime, with **One Piece** being one of my favorites.
-
-> 🚀 Always learning, always building, and always looking for the next challenge.
+**Beyond code:** video games, electronic music, and anime—especially **One Piece**.
 
 <br clear="both" />
 
