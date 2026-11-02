@@ -10,7 +10,7 @@
 
 ## About me
 
-<img align="right" width="105" alt="Luffy Gear 5" src="https://media.tenor.com/rsoULNKnMdYAAAAi/luffy-gear-5-luffy.gif" />
+<img align="right" width="120" alt="Luffy Gear 5" src="https://media.tenor.com/rsoULNKnMdYAAAAi/luffy-gear-5-luffy.gif" />
 
 Software Engineering student based in Lima, Peru, working toward a career in **Machine Learning Engineering**. Interested in understanding data, building models, and turning ideas into useful software.
 
@@ -18,7 +18,6 @@ Software Engineering student based in Lima, Peru, working toward a career in **M
 
 - Machine Learning and data analysis with Python.
 - Model development with scikit-learn and PyTorch.
-- Software development with Swift.
 
 **Beyond code:** video games, electronic music, and anime—especially **One Piece**.
 
