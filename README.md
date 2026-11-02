@@ -1,9 +1,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-banner-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/profile-banner-light.svg" />
-  <img src="./assets/profile-banner-dark.svg" width="100%" alt="Leonardo Sullón — Software Engineering Student in Lima, Peru. ML Engineer goal, Machine Learning focus. Animated portrait, Luffy Gear 5 and AI robot." />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-banner-dark.634a53cb8a.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/profile-banner-light.3284d5f237.svg" />
+  <img src="./assets/profile-banner-dark.634a53cb8a.svg" width="100%" alt="Leonardo Sullón — Software Engineering Student in Lima, Peru. ML Engineer goal, Machine Learning focus. Animated portrait, Luffy Gear 5 and AI robot." />
 </picture>
 
 </div>

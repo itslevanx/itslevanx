@@ -22,7 +22,11 @@ python -m pip install -r scripts/banner/requirements.txt
 python scripts/banner/generate.py
 ```
 
-Se generan `assets/profile-banner-dark.svg` y `assets/profile-banner-light.svg`.
+Se generan `assets/profile-banner-dark.<revisión>.svg` y
+`assets/profile-banner-light.<revisión>.svg`, donde la revisión identifica el
+contenido de cada imagen. El generador actualiza las rutas del README y retira
+las versiones generadas anteriores. Así, cada cambio visual tiene una URL nueva
+y evita que se siga mostrando un banner guardado en caché.
 El README elige la variante con `<picture>` y `prefers-color-scheme`.
 Con `prefers-reduced-motion: reduce` se muestra solamente el retrato estático.
 

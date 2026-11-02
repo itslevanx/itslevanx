@@ -7,7 +7,9 @@ Dependencias: python -m pip install -r scripts/banner/requirements.txt
 from __future__ import annotations
 
 import html
+import hashlib
 import json
+import re
 from collections import deque
 from pathlib import Path
 
@@ -341,11 +343,24 @@ def render(config, clouds, theme):
 def main():
     config = json.loads(CONFIG.read_text(encoding='utf-8'))
     images = [prepare_image(item) for item in config['sequence']]
+    readme_path = ROOT / 'README.md'
+    readme = readme_path.read_text(encoding='utf-8')
     for theme in THEMES:
         clouds = [image_points(image,theme) for image in images]
-        output = ROOT / 'assets' / f'profile-banner-{theme}.svg'
-        output.write_text(render(config,clouds,theme),encoding='utf-8')
+        svg = render(config,clouds,theme)
+        revision = hashlib.sha256(svg.encode('utf-8')).hexdigest()[:10]
+        output = ROOT / 'assets' / f'profile-banner-{theme}.{revision}.svg'
+        output.write_text(svg,encoding='utf-8')
+        pattern = rf'\./assets/profile-banner-{theme}(?:\.[a-f0-9]{{10}})?\.svg'
+        readme = re.sub(pattern,f'./assets/{output.name}',readme)
+        # Una URL distinta por contenido evita reutilizar una imagen anterior.
+        for old in (ROOT / 'assets').glob(f'profile-banner-{theme}*.svg'):
+            if old != output and re.fullmatch(
+                rf'profile-banner-{theme}(?:\.[a-f0-9]{{10}})?\.svg',old.name
+            ):
+                old.unlink()
         print(f'{output.relative_to(ROOT)}: {output.stat().st_size:,} bytes')
+    readme_path.write_text(readme,encoding='utf-8')
 
 
 if __name__ == '__main__':
