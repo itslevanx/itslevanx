@@ -30,8 +30,6 @@ Outside of tech, 🎮 I enjoy playing video games, 🎵 listening to music—esp
 
 <br clear="both" />
 
-<img src="./assets/neural-network.svg" width="100%" alt="Animated neural pipeline from data to insight" />
-
 ## Skills
 
 <div align="center">
@@ -89,8 +87,6 @@ Outside of tech, 🎮 I enjoy playing video games, 🎵 listening to music—esp
 </div>
 
 <br />
-
-<img src="./assets/ml-terminal.svg" width="100%" alt="Animated machine learning terminal" />
 
 ## GitHub analytics
 
