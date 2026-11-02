@@ -10,7 +10,7 @@
     "ml": "PyTorch · scikit-learn",
     "data": "NumPy · pandas · Matplotlib",
     "databases": "SQL Server · MySQL · PostgreSQL · SQLite",
-    "tools": "Git · n8n · Jira · Google Colab",
+    "tools": "Git · n8n · Google Colab",
     "editors": "VS Code · Visual Studio · Xcode"
   },
   "sequence": [

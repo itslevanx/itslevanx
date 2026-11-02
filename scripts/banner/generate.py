@@ -75,7 +75,9 @@ def prepare_image(item):
         rgb = np.asarray(image.convert('RGB'), dtype=np.int16)
         background = ((rgb.max(axis=2)-rgb.min(axis=2) < 22)
                       & (rgb.mean(axis=2) > 105))
-        background[int(image.height*.78):] = False
+        # El fondo continúa detrás de los hombros: no cortar la búsqueda por altura.
+        # Solo se parte de los bordes superior y laterales; la camisa blanca que
+        # toca el borde inferior queda protegida por el contorno del saco.
         exterior = np.zeros(background.shape, dtype=bool)
         queue = deque((0,x) for x in range(image.width))
         queue.extend((y,x) for y in range(image.height)
