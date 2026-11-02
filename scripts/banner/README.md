@@ -3,7 +3,15 @@
 El banner convierte las tres imágenes originales en dibujos de puntos y anima
 las transiciones dentro de un SVG autónomo, sin JavaScript ni servicios externos.
 La secuencia es **Leonardo → Luffy Gear 5 → robot leyendo → Leonardo**.
-Cada figura permanece 3,6 segundos y cada transición dura 1,4 segundos.
+Cada figura permanece 3,6 segundos y cada transición dura 2,2 segundos.
+El bucle completo dura 17,4 segundos.
+
+Las figuras se desarman en una onda diagonal de 48 grupos de puntos. Mientras
+desaparece el detalle, 1400 partículas viajan por curvas Bézier con aceleración
+y frenado suaves; después se reconstruye la siguiente figura de forma gradual.
+Las capas de detalle de dos figuras nunca se muestran al mismo tiempo. Las
+trayectorias, los colores secundarios y las estelas son deterministas, y la
+animación vuelve al retrato sin saltos al reiniciar el bucle.
 
 ## Regenerar
 

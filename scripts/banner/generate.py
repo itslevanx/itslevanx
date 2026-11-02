@@ -18,8 +18,9 @@ ROOT = Path(__file__).resolve().parents[2]
 CONFIG = Path(__file__).with_name('profile.json')
 W, H = 1180, 610
 GRID = (330, 360)
-PARTICLES = 900
-HOLD, TRANSITION = 3.6, 1.4
+PARTICLES = 1400
+HOLD, TRANSITION = 3.6, 2.2
+FRAGMENTS = 48
 FONT = 'ui-monospace,SFMono-Regular,Consolas,monospace'
 THEMES = {
     'dark': dict(bg='#080F1D', panel='#0D1729', inset='#101D32', line='#263752',
@@ -153,20 +154,137 @@ def match_points(source, target):
     return ordered
 
 
+def timeline_key(times, duration):
+    return ';'.join(f'{v/duration:.5f}'.rstrip('0').rstrip('.') or '0' for v in times)
+
+
+def animation(attribute, times, values, duration, transform=False):
+    tag = 'animateTransform' if transform else 'animate'
+    extra = ' type="translate"' if transform else ''
+    # Controla la aparición del detalle; las partículas usan sus propias curvas.
+    return (f'<{tag} attributeName="{attribute}"{extra} dur="{duration:g}s" '
+            f'repeatCount="indefinite" calcMode="linear" '
+            f'keyTimes="{timeline_key(times,duration)}" values="{";".join(values)}"/>')
+
+
+def fragment_layer(clouds, duration):
+    """Desmonta y reconstruye el detalle en una onda; nunca cruza dos retratos."""
+    n = len(clouds)
+    out = []
+    for stage, cloud in enumerate(clouds):
+        # La onda diagonal agrupa granos intercalados, sin baldosas visibles.
+        rng = np.random.default_rng(800+stage)
+        score = ((cloud[:,0]-79)/GRID[0]*.32 +
+                 (cloud[:,1]-156)/GRID[1]*.68 + rng.uniform(-.07,.07,len(cloud)))
+        ranking = np.argsort(score,kind='stable')
+        groups = np.array_split(ranking,FRAGMENTS)
+        for index, ids in enumerate(groups):
+            phase = index/(FRAGMENTS-1)
+            offset = np.array([12+18*phase, -12-15*(1-phase)])
+            times = [0.0]
+            visible = ['1' if stage == 0 else '0']
+            shifts = ['0 0']
+            for transition in range(n):
+                start = transition*(HOLD+TRANSITION)+HOLD
+                if stage == transition:
+                    # La figura sale antes de que empiece a aparecer la siguiente.
+                    moments = [0,.05+phase*.10,.20+phase*.13,.44,1]
+                    alpha = [1,1,.32,0,0]
+                    displacement = [0,0,.45,1,1]
+                elif stage == (transition+1)%n:
+                    moments = [0,.58,.63+phase*.11,.84+phase*.12,1]
+                    alpha = [0,0,.28,1,1]
+                    displacement = [-1,-1,-.45,0,0]
+                else:
+                    moments = [0,1]
+                    alpha = [0,0]
+                    displacement = [0,0]
+                for moment, opacity, movement in zip(moments,alpha,displacement):
+                    times.append(start+moment*TRANSITION)
+                    visible.append(f'{opacity:g}')
+                    delta = offset*movement
+                    shifts.append(f'{delta[0]:.1f} {delta[1]:.1f}')
+            # El último valor del bucle coincide con el primero, incluso oculto.
+            shifts[-1] = shifts[0]
+            out.append(f'<path class="detail stage-{stage}" d="{path_runs(cloud[ids])}" '
+                       f'opacity="{visible[0]}">'
+                       + animation('opacity',times,visible,duration)
+                       + animation('transform',times,shifts,duration,transform=True)
+                       + '</path>')
+    return ''.join(out)
+
+
+def particle_layer(clouds, duration, theme):
+    """Transporta partículas por curvas Bézier nativas con aceleración suave."""
+    rng = np.random.default_rng(2026)
+    n = len(clouds)
+    samples = [cloud[rng.choice(len(cloud),PARTICLES,replace=False)] for cloud in clouds]
+    for stage in range(1,n):
+        samples[stage] = match_points(samples[stage-1],samples[stage])
+    phase = rng.uniform(0,2*np.pi,PARTICLES)
+    bend = np.column_stack((np.cos(phase),np.sin(phase)))
+    bend *= rng.uniform(22,56,PARTICLES)[:,None]
+    delays = rng.uniform(.025,.13,PARTICLES)
+    finishes = rng.uniform(.86,.98,PARTICLES)
+    curves, lengths = [], []
+    # Las longitudes fijan las paradas de cada figura sobre la curva completa.
+    u = np.linspace(0,1,129)[:,None,None]
+    for stage in range(n):
+        source, target = samples[stage],samples[(stage+1)%n]
+        delta = target-source
+        c1 = source+delta*.23+bend
+        c2 = target-delta*.23+bend
+        points = ((1-u)**3*source + 3*(1-u)**2*u*c1
+                  + 3*(1-u)*u*u*c2 + u**3*target)
+        lengths.append(np.linalg.norm(np.diff(points,axis=0),axis=2).sum(axis=0))
+        curves.append((source,c1,c2,target))
+    cumulative = np.vstack((np.zeros(PARTICLES),np.cumsum(lengths,axis=0)))
+    cumulative /= cumulative[-1]
+    fade_times, alpha = [0.0], ['0']
+    for stage in range(n):
+        start = stage*(HOLD+TRANSITION)+HOLD
+        fade_times.extend([start,start+.22*TRANSITION,start+.77*TRANSITION,start+TRANSITION])
+        alpha.extend(['0','.92','.92','0'])
+    out = []
+    for index in range(PARTICLES):
+        times, stops, splines = [0.0], ['0'], []
+        commands = [f'M{samples[0][index,0]:.1f} {samples[0][index,1]:.1f}']
+        for stage,(_,c1,c2,target) in enumerate(curves):
+            start = stage*(HOLD+TRANSITION)+HOLD
+            times.extend([start+delays[index]*TRANSITION,
+                          start+finishes[index]*TRANSITION,start+TRANSITION])
+            stops.extend([f'{cumulative[stage,index]:.6f}',
+                          f'{cumulative[stage+1,index]:.6f}',
+                          f'{cumulative[stage+1,index]:.6f}'])
+            splines.extend(['0 0 1 1','.42 0 .22 1','0 0 1 1'])
+            commands.append(f'C{c1[index,0]:.1f} {c1[index,1]:.1f} '
+                            f'{c2[index,0]:.1f} {c2[index,1]:.1f} '
+                            f'{target[index,0]:.1f} {target[index,1]:.1f}')
+        color = THEMES[theme]['secondary'] if index%7 == 0 else THEMES[theme]['accent']
+        width = 1.6 if index%5 == 0 else 1.15
+        # Una pequeña fracción deja una estela tenue orientada con el movimiento.
+        grain = '<path d="M-4 0h3" opacity=".22"/>' if index%19 == 0 else ''
+        out.append(f'<g class="traveller" stroke="{color}" stroke-linecap="round" opacity="0">'
+                   f'<path d="M0 0h{width}"/>{grain}'
+                   f'<animateMotion dur="{duration:g}s" repeatCount="indefinite" '
+                   f'rotate="auto" calcMode="spline" path="{"".join(commands)}" '
+                   f'keyTimes="{timeline_key(times,duration)}" '
+                   f'keyPoints="{";".join(stops)}" keySplines="{";".join(splines)}"/>'
+                   + animation('opacity',fade_times,alpha,duration) + '</g>')
+    return ''.join(out)
+
+
 def render(config, clouds, theme):
     t = THEMES[theme]
     n = len(clouds)
     duration = n*(HOLD+TRANSITION)
-    times = [0.0]
-    for i in range(n):
-        times.extend([i*(HOLD+TRANSITION)+HOLD, (i+1)*(HOLD+TRANSITION)])
-    keys = ';'.join(f'{v/duration:.6f}' for v in times)
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
            f'viewBox="0 0 {W} {H}" role="img" aria-labelledby="title desc">',
            f'<title id="title">{esc(config["name"])} — Machine Learning profile</title>',
            '<desc id="desc">Animated terminal profile. Leonardo’s portrait transforms '
            'into Luffy Gear 5 and a robot reading a book. Software Engineering Student '
            'in Lima, Peru, working toward ML Engineer.</desc>',
+           '<defs><clipPath id="visual-clip"><rect x="49" y="140" width="390" height="390"/></clipPath></defs>',
            '<style>@media (prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}}'
            '@media (prefers-reduced-motion:no-preference){.still{display:none}}</style>',
            f'<rect width="{W}" height="{H}" rx="20" fill="{t["bg"]}"/>',
@@ -190,40 +308,11 @@ def render(config, clouds, theme):
                 f'<rect x="1003" y="95" width="125" height="23" rx="11.5" fill="{t["secondary"]}" opacity=".14"/>',
                 text(1065,111,'@'+config['username'],'secondary',12,'text-anchor="middle" font-weight="700"'),
                 f'<path d="M51 143h12M51 143v12M437 143h-12M437 143v12M51 526h12M51 526v-12M437 526h-12M437 526v-12" stroke="{t["secondary"]}" opacity=".6"/>'])
-    out.append(f'<g fill="none" stroke="{t["accent"]}" stroke-width="1.05" shape-rendering="crispEdges">')
+    out.append(f'<g clip-path="url(#visual-clip)" fill="none" stroke="{t["accent"]}" stroke-width="1.05">')
     out.append(f'<path class="still" d="{path_runs(clouds[0])}"/>')
     out.append('<g class="motion">')
-    for index, cloud in enumerate(clouds):
-        # Cada figura conserva su detalle interno, no solamente la silueta.
-        visible = [int(index == 0)]
-        for i in range(n):
-            visible.extend([int(index == i), int(index == (i+1) % n)])
-        out.append(f'<path d="{path_runs(cloud)}" opacity="{visible[0]}">'
-                   f'<animate attributeName="opacity" dur="{duration:g}s" repeatCount="indefinite" '
-                   f'keyTimes="{keys}" values="{";".join(map(str,visible))}"/></path>')
-    rng = np.random.default_rng(2026)
-    samples = [cloud[rng.choice(len(cloud), PARTICLES, replace=False)] for cloud in clouds]
-    for i in range(1,n):
-        samples[i] = match_points(samples[i-1],samples[i])
-    # Se vuelve a las coordenadas originales para que el bucle sea continuo.
-    particle_times = [0.0]
-    positions = [samples[0]]
-    opacity = ['0']
-    for i in range(n):
-        start, end = samples[i], samples[(i+1)%n]
-        particle_times.extend([i*(HOLD+TRANSITION)+HOLD,
-                               i*(HOLD+TRANSITION)+HOLD+TRANSITION/2,
-                               (i+1)*(HOLD+TRANSITION)])
-        positions.extend([start, (start+end)/2, end])
-        opacity.extend(['0','.8','0'])
-    particle_keys = ';'.join(f'{v/duration:.6f}' for v in particle_times)
-    for index in range(PARTICLES):
-        values = ';'.join(f'{p[index,0]:.1f} {p[index,1]:.1f}' for p in positions)
-        out.append(f'<path d="M0 0h1.3" opacity="0">'
-                   f'<animateTransform attributeName="transform" type="translate" '
-                   f'dur="{duration:g}s" repeatCount="indefinite" keyTimes="{particle_keys}" values="{values}"/>'
-                   f'<animate attributeName="opacity" dur="{duration:g}s" repeatCount="indefinite" '
-                   f'keyTimes="{particle_keys}" values="{";".join(opacity)}"/></path>')
+    out.append(fragment_layer(clouds,duration))
+    out.append(particle_layer(clouds,duration,theme))
     out.append('</g></g>')
     out.append(text(51,548,'PORTRAIT  →  GEAR 5  →  AI','muted',10))
     rows = [(0,'profile',''),(1,'subject',config['name']),(1,'role',config['role']),
