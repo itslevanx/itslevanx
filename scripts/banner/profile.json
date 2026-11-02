@@ -1,0 +1,21 @@
+{
+  "name": "Leonardo Sullón",
+  "username": "itslevanx",
+  "role": "Software Engineering Student",
+  "origin": "Lima, Peru",
+  "goal": "ML Engineer",
+  "focus": "Machine Learning",
+  "stack": {
+    "languages": "Python · Swift · HTML · CSS",
+    "ml": "PyTorch · scikit-learn",
+    "data": "NumPy · pandas · Matplotlib",
+    "databases": "SQL Server · MySQL · PostgreSQL · SQLite",
+    "tools": "Git · n8n · Google Colab",
+    "editors": "VS Code · Visual Studio · Xcode"
+  },
+  "sequence": [
+    {"file": "portrait.png", "label": "LEONARDO / PORTRAIT", "portrait": true},
+    {"file": "luffy.png", "label": "LUFFY / GEAR 5"},
+    {"file": "robot.png", "label": "LEARNING / AI COMPANION"}
+  ]
+}
